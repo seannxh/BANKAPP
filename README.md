@@ -1,6 +1,6 @@
 ![Finacial Stone Inc](https://github.com/user-attachments/assets/f20f9681-a738-4d78-943e-a6c9c183d00b)
 
-
+[Link to Live Site!](https://main.d2y11439p4s8xr.amplifyapp.com/)
 # Financial Stone Inc. - Banking Application
 
 Welcome to **Financial Stone Inc.**, a modern and secure banking application designed to help users manage their accounts, view transactions, and achieve financial goals with ease.
@@ -35,7 +35,6 @@ Welcome to **Financial Stone Inc.**, a modern and secure banking application des
 ### **Hosting & Deployment**
 - [Render](https://render.com/) (Backend hosting)
 - [AWS Amplify](https://aws.amazon.com/amplify/) (Frontend hosting)
-- [AWS S3](https://aws.amazon.com/s3/) (Static and media file storage)
 
 ### **Additional Tools**
 - [Node.js](https://nodejs.org/) (JavaScript runtime for backend development)
