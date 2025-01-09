@@ -1,6 +1,4 @@
-![FINACIAL STONE INC.](https://github.com/user-attachments/assets/b9c1d9b8-c16d-4427-a8a7-f1c6ece6f38d)
-
-
+![Finacial Stone Inc](https://github.com/user-attachments/assets/f20f9681-a738-4d78-943e-a6c9c183d00b)
 
 
 # Financial Stone Inc. - Banking Application
