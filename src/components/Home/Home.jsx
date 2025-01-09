@@ -126,7 +126,7 @@ const HomeContent = () => {
           <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
             <div className="bg-white rounded-lg border-2 border-gray-900 shadow-md p-6  hover:scale-[1.02] transition-transform duration-300">
             <div className="rounded-lg border-2 border-gray-900 shadow-md overflow-hidden  hover:scale-[1.02] transition-transform duration-300">
-              <video autoPlay loop muted className="w-full h-full object-cover">
+              <video autoPlay loop muted className="w-full h-full object-cover pointer-events-none" playsInline draggable="false">
                 <source src={video3} type="video/mp4" />
               </video>
             </div>
