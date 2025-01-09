@@ -32,7 +32,6 @@ import home from "../../assets/home.png";
 import auto from "../../assets/auto2.jpg";
 import video5 from "../../assets/aboutbackground.mp4";
 import video6 from "../../assets/moon.mp4";
-import "./home.css"
 
 const HomeContent = () => {
   const navigate = useNavigate();
@@ -105,7 +104,7 @@ const HomeContent = () => {
       </div>
 
       <div className="my-20">
-        <video autoPlay loop muted className="w-full h-40 object-cover">
+        <video autoPlay loop muted className="w-full h-40 object-cover pointer-events-none">
           <source src={video6} type="video/mp4" />
         </video>
       </div>
@@ -154,7 +153,7 @@ const HomeContent = () => {
           autoPlay
           loop
           muted
-          className="w-full h-40 object-cover my-40"
+          className="w-full h-40 object-cover my-40 pointer-events-none"
         >
           <source src={video5} type="video/mp4" />
           Your browser does not support the video tag.
@@ -223,7 +222,7 @@ const HomeContent = () => {
           autoPlay
           loop
           muted
-          className="w-full h-40 object-cover my-40"
+          className="w-full h-40 object-cover my-40 pointer-events-none"
         >
           <source src={video4} type="video/mp4" />
           Your browser does not support the video tag.
