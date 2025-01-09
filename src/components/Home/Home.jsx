@@ -99,12 +99,12 @@ const HomeContent = () => {
             >
               Why Us?
             </Link>
-          </div>
+          </div> 
         </div>
       </div>
 
       <div className="my-20">
-        <video autoPlay loop muted className="w-full h-40 object-cover pointer-events-none">
+        <video autoPlay loop muted playsInline draggable="false" className="w-full h-40 object-cover pointer-events-none">
           <source src={video6} type="video/mp4" />
         </video>
       </div>
@@ -153,6 +153,7 @@ const HomeContent = () => {
           autoPlay
           loop
           muted
+          playsInline draggable="false"
           className="w-full h-40 object-cover my-40 pointer-events-none"
         >
           <source src={video5} type="video/mp4" />
@@ -222,6 +223,7 @@ const HomeContent = () => {
           autoPlay
           loop
           muted
+          playsInline draggable="false"
           className="w-full h-40 object-cover my-40 pointer-events-none"
         >
           <source src={video4} type="video/mp4" />
