@@ -35,7 +35,6 @@ Welcome to **Financial Stone Inc.**, a modern and secure banking application des
 ### **Hosting & Deployment**
 - [Render](https://render.com/) (Backend hosting)
 - [AWS Amplify](https://aws.amazon.com/amplify/) (Frontend hosting)
-- [AWS S3](https://aws.amazon.com/s3/) (Static and media file storage)
 
 ### **Additional Tools**
 - [Node.js](https://nodejs.org/) (JavaScript runtime for backend development)
