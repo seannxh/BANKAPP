@@ -1,12 +1,12 @@
 // Layout.jsx
 import React from 'react';
-import Navbar from '../Navbar/navbar.jsx'; // Make sure this path matches your navbar component location
+
 
 export const Layout = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
 
-      <main className="flex-1 pt-[175px]"> {/* Adjust 80px to match your navbar height */}
+      <main className="flex-1 pt-[175px]"> 
         {children}
       </main>
     </div>
