@@ -32,6 +32,7 @@ import home from "../../assets/home.png";
 import auto from "../../assets/auto2.jpg";
 import video5 from "../../assets/aboutbackground.mp4";
 import video6 from "../../assets/moon.mp4";
+import "./home.css"
 
 const HomeContent = () => {
   const navigate = useNavigate();
