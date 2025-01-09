@@ -56,7 +56,9 @@ const HomeContent = () => {
         autoPlay
         loop
         muted
-        className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+        className="fixed top-0 left-0 w-full h-full object-cover -z-10 pointer-events-none"
+        playsInline draggable="false"
+        pointer-events-none
         style={{ marginTop: '80px' }} 
       >
         <source src={video1} type="video/mp4" />
