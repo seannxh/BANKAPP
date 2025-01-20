@@ -21,7 +21,6 @@ const Signin = (props) => {
       const userResponse = await signin(formData);
       console.log("Response from signin:", userResponse);
       props.setToken(userResponse.token);
-
       setIsLoading(false);
       navigate("/api/user-accounts/");
     } catch (err) {
