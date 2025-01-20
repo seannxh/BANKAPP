@@ -25,7 +25,7 @@ const Signin = (props) => {
       setIsLoading(false);
       navigate("/api/user-accounts/");
     } catch (err) {
-      setError(err.message);
+      setError("Login Failed, Please Try Again");
       setIsLoading(false);
     }
   };

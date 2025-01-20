@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import ClipLoader from "react-spinners/ClipLoader";
 import video1 from "../../assets/background1.mp4";
+import {signup} from "../../services/authService"
 
-const Signup = () => {
+const Signup = (props) => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -29,33 +29,28 @@ const Signup = () => {
     e.preventDefault();
     setError("");
     setSuccessMessage("");
-
+  
     if (formData.password !== confirmPassword) {
       setError("Passwords do not match");
       return;
     }
-
+  
     setIsLoading(true);
     try {
-      const response = await axios.post(
-        `${import.meta.env.VITE_DATABASE_URL}/api/signup/`,
-        formData,
-        {
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-
-      console.log("Sign-up successful:", response.data);
+      const response = await signup(formData);
+      console.log("Sign-up successful:", response);
+      props.setToken(response.token);
       setSuccessMessage("Account created successfully. Redirecting to sign in...");
       setTimeout(() => {
         navigate("/api/signin");
       }, 3000);
     } catch (error) {
-      setError(error.response?.data?.error || "Sign up failed. Please try again.");
+      setError(error.message || "Sign up failed. Please try again.");
     } finally {
       setIsLoading(false);
     }
   };
+  
 
   return (
     <div className="relative min-h-screen">

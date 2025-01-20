@@ -35,7 +35,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/api/signin" element={<Signin setToken={setToken} />} />
-        <Route path="/api/signup" element={<Signup />} />
+        <Route path="/api/signup" element={<Signup token={token} setToken={setToken} />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route
           path="/api/user-accounts/"
