@@ -23,6 +23,24 @@ export const signup = async (formData) => {
     }
   };
 
+export const getItem = async  () = {
+  try{
+    const res = await fetch(`${BACKEND_URL}/api/signup/`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      
+      const json = await res.json();
+  
+      if (json.error) {
+        throw new Error(json.error);
+      }
+  }catcherr) {
+
+  }finally
+}
+
 export const getUser = () => {
     const token = localStorage.getItem("token");
     if (!token) return null;
