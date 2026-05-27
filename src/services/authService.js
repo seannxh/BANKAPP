@@ -36,7 +36,7 @@ export const getItem = async  () = {
       if (json.error) {
         throw new Error(json.error);
       }
-  }catch (err) {
+  }catcherr) {
 
   }finally
 }
