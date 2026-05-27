@@ -15,7 +15,7 @@ export const signup = async (formData) => {
       if (json.error) {
         throw new Error(json.error);
       }
-  
+  // testing for my aicodereviewer
       return json;
     } catch (err) {
       console.error("Signup error:", err);
